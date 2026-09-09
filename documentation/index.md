@@ -1,15 +1,25 @@
-Read Receipts for Confluence — Documentation Require read acknowledgement on any Confluence page, and see who has read it and who hasn’t.
+# Documentation
 
-Requiring acknowledgement on a page Open the page. In the byline under the page title — next to the author’s name — click Acknowledgement. Switch Requires acknowledgement on. Under Who must acknowledge this page, add the people who need to read it. Only the people you add here count as outstanding. Click Save who must acknowledge. The first person to configure a page manages it. The panel always shows who that is, under Managed by.
+Pick the app you are using.
 
-How readers acknowledge Anyone who still needs to acknowledge the page sees a banner at the top: “This page requires a read acknowledgement.”
+## [Read Receipts for Confluence](/documentation/read-receipts/)
 
-They click I have read this page. That records their Atlassian identity and a server-side timestamp. There is no second step.
+Require read acknowledgement on a Confluence page, name who must read it, and
+track who has confirmed. Setup, how readers acknowledge, reading the panel, what
+is stored, and the app's limits.
 
-A reader can only acknowledge as themselves.
+## [Bulk Excel &amp; CSV Exporter for Jira](/documentation/bulk-excel-csv-exporter/)
 
-Seeing who has read it The Who has acknowledged panel on the page shows:
+Export a Jira project or saved filter to Excel or CSV past the 1,000-row limit.
+Where to find the app, choosing a source and a format, what the columns mean,
+which format to pick, and the app's limits.
 
-Acknowledged — everyone who has confirmed, with the date each did it. Not yet — the people you nominated who have not confirmed. This is your chase list. It is not everyone who can view the page, and not the space members. Things worth knowing Acknowledgements are written once and are never edited or overwritten. Switching the requirement off does not delete existing records. They are still there when you switch it back on. Someone who acknowledges without being nominated still appears under Acknowledged. The panel lists the first 100 acknowledgements for a page. Above that it tells you the lists are incomplete rather than showing a partial list as if it were whole. Your data The app runs entirely on Atlassian Forge. Acknowledgements are stored in Forge hosted storage inside your own Atlassian tenancy. The app makes no outbound calls, and its only permission is access to its own storage.
+## [Hide from Export for Confluence](/documentation/hide-from-export/)
 
-Support bevelpine.support@proton.me — Monday to Friday, 09:00–17:00 UK time. Target response: 2 business days.
+Insert the macro, put content inside it, and keep that content off PDF and Word
+exports. What is covered, what is not, and the app's limits.
+
+---
+
+Can't find what you need? [Support](/support/) &middot;
+[bevelpine.support@proton.me](mailto:bevelpine.support@proton.me)
