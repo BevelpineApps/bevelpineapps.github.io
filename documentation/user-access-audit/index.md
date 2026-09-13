@@ -55,8 +55,8 @@ Above the table you can filter by:
 - **Group**: *Any or no group*, *In no group at all*, or one group.
 
 The page repeats the text it actually filtered by, and the count that matches,
-next to each other. For example: *"Text filter applied: [zzseed-001]"* and *"1 of
-544 audited accounts match this filter."* **Clear text** empties the text box.
+next to each other, in the form *"Text filter applied: [your text]"* and
+*"&lt;n&gt; of &lt;total&gt; audited accounts match this filter."* **Clear text** empties the text box.
 
 ## Downloading the CSV
 
