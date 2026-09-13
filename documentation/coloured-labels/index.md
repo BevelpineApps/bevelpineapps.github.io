@@ -29,7 +29,7 @@ On the settings page, under **Give a label a colour**:
    preview chip next to the buttons shows the result.
 3. Click **Save colour**.
 
-The page confirms the save, for example *""needs-review" is now coloured"*. Saving
+The page confirms the save, for example *"needs-review" is now coloured*. Saving
 the same label again with a different colour says *"… changed colour"*. The Label
 field empties after a successful save.
 
@@ -50,7 +50,7 @@ After a refused save, your text stays in the field so you can correct it.
 ## Removing a colour
 
 Click **Remove colour** on a row and confirm. The page says, for example,
-*""needs-review" is back to the default colour"*. Issues carrying that label then
+*"needs-review" is back to the default colour*. Issues carrying that label then
 show it as *Default (grey)*, like any label with no colour. The label itself is
 not touched.
 
