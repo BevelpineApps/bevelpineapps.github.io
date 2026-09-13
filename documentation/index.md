@@ -32,8 +32,8 @@ uses, what it cannot do, and the app's limits.
 
 ## [Coloured Labels for Jira](/documentation/coloured-labels/)
 
-Set a colour for a label, add the issue panel, and remove a colour again. Who can
-change colours, what is stored, and the app's limits.
+Set a colour for a label, add the issue panel, and remove a colour again. The
+permissions it uses, what is stored, and the app's limits.
 
 ---
 
