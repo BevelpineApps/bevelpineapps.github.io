@@ -57,13 +57,13 @@ groups grant, filter the list, and download it as CSV. Read-only.
 [Privacy policy](/apps-privacy/#user-access-audit-for-jira) &middot;
 [Support](/support/)
 
-### Colored Labels for Jira
+### Coloured Labels for Jira
 
 Give a Jira label a colour once for the whole site, and see each issue's labels
 as coloured chips in the app's own issue panel.
 
-[Documentation](/documentation/colored-labels/) &middot;
-[Privacy policy](/apps-privacy/#colored-labels-for-jira) &middot;
+[Documentation](/documentation/coloured-labels/) &middot;
+[Privacy policy](/apps-privacy/#coloured-labels-for-jira) &middot;
 [Support](/support/)
 
 ## How we build

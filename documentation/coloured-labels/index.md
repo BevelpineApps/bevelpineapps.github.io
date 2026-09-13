@@ -1,4 +1,4 @@
-# Colored Labels for Jira
+# Coloured Labels for Jira
 
 Give a Jira label a colour once for the whole site, then see each issue's labels
 as coloured chips in the app's own issue panel. The app never changes the labels
@@ -123,7 +123,7 @@ The app runs entirely on Atlassian Forge.
 - **Removing a colour** deletes its record.
 - **Egress.** The app makes no outbound network calls.
 
-See the [privacy policy](/apps-privacy/#colored-labels-for-jira) for the full
+See the [privacy policy](/apps-privacy/#coloured-labels-for-jira) for the full
 detail.
 
 ## Support
