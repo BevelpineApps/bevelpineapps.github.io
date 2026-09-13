@@ -22,7 +22,7 @@ exports. What is covered, what is not, and the app's limits.
 ## [Initiative Timeline for Jira](/documentation/initiative-timeline/)
 
 Add initiatives with dates, attach Jira issues by key, and read the timeline and
-% done. What the form refuses, who can edit and delete, what is stored, and the
+% done. What the form refuses, editing and deleting, what is stored, and the
 app's limits and known issues.
 
 ## [User Access Audit for Jira](/documentation/user-access-audit/)

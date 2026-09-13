@@ -1,8 +1,7 @@
 # Bevelpine Apps
 
-We build small, focused Atlassian apps that make compliance and accountability
-easier to manage. Each one does a single job, runs entirely on Atlassian Forge,
-and sends no data anywhere.
+We build small, focused Atlassian apps. Each one does a single job, runs
+entirely on Atlassian Forge, and makes no outbound network calls.
 
 ## Our apps
 
@@ -46,6 +45,7 @@ Jira.
 
 [Documentation](/documentation/initiative-timeline/) &middot;
 [Privacy policy](/apps-privacy/#initiative-timeline-for-jira) &middot;
+[Security](/security/) &middot;
 [Support](/support/)
 
 ### User Access Audit for Jira
@@ -55,6 +55,7 @@ groups grant, filter the list, and download it as CSV. Read-only.
 
 [Documentation](/documentation/user-access-audit/) &middot;
 [Privacy policy](/apps-privacy/#user-access-audit-for-jira) &middot;
+[Security](/security/) &middot;
 [Support](/support/)
 
 ### Coloured Labels for Jira
@@ -64,16 +65,21 @@ as coloured chips in the app's own issue panel.
 
 [Documentation](/documentation/coloured-labels/) &middot;
 [Privacy policy](/apps-privacy/#coloured-labels-for-jira) &middot;
+[Security](/security/) &middot;
 [Support](/support/)
 
 ## How we build
 
-- **Everything runs on Atlassian Forge**, inside your own tenancy.
-- **No outbound calls.** No analytics, no tracking, no third-party services, no
-  data transfer of any kind outside your Atlassian site.
-- **The narrowest permission that works.** Read Receipts asks only for access to
+- **Everything runs on Atlassian Forge.**
+- **No outbound calls.** No analytics, no tracking, no third-party services, and
+  no data sent to any service outside your Atlassian site. A file a user
+  downloads (an Exporter export, or a User Access Audit CSV) is made in the
+  browser and saved to that user's own computer.
+- **The permissions each app asks for.** Read Receipts asks only for access to
   its own storage. The Exporter asks only to read Jira work. Hide from Export
-  asks for nothing at all.
+  asks for nothing at all. Initiative Timeline and Coloured Labels ask to read
+  Jira work and for their own storage. User Access Audit asks for five
+  read-only Jira permissions.
 - **We publish what each app does not do**, on every documentation page.
 
 ## Contact

@@ -1,8 +1,9 @@
 # Support
 
-Support covers all three Bevelpine apps: **Read Receipts for Confluence**,
-**Bulk Excel &amp; CSV Exporter for Jira**, and **Hide from Export for
-Confluence**.
+Support covers the six Bevelpine apps documented on this site: **Read Receipts
+for Confluence**, **Bulk Excel &amp; CSV Exporter for Jira**, **Hide from Export
+for Confluence**, **Initiative Timeline for Jira**, **User Access Audit for
+Jira** and **Coloured Labels for Jira**.
 
 ## Get help
 
@@ -20,9 +21,9 @@ Email the address above and include:
 - what you expected to happen;
 - what actually happened, and **the error message word for word** if there was
   one;
-- roughly how many items were involved &mdash; the number of projects, issues, or
-  people. Several known limits depend on that number, and it is usually the
-  fastest way for us to recognise the problem.
+- roughly how many items were involved &mdash; the number of projects, issues,
+  people, initiatives or labels. Several known limits depend on that number,
+  and it is usually the fastest way for us to recognise the problem.
 
 A screenshot helps. Please don't send us exported files or page content &mdash;
 we don't need your data to diagnose a fault, and we would rather not receive it.
@@ -40,6 +41,9 @@ we keep current:
 - [Read Receipts for Confluence](/documentation/read-receipts/#limits-and-known-issues)
 - [Bulk Excel &amp; CSV Exporter for Jira](/documentation/bulk-excel-csv-exporter/#limits-and-known-issues)
 - [Hide from Export for Confluence](/documentation/hide-from-export/#what-it-does-not-do)
+- [Initiative Timeline for Jira](/documentation/initiative-timeline/#limits-and-known-issues)
+- [User Access Audit for Jira](/documentation/user-access-audit/#limits-and-known-issues)
+- [Coloured Labels for Jira](/documentation/coloured-labels/#limits-and-known-issues)
 
 That is where a known fault is listed and where a fix is announced. **We do not
 currently run a public issue tracker.** If that changes this page will say so;
