@@ -39,7 +39,7 @@ drops it.
 
 ### Initiative Timeline for Jira
 
-Keep a shared list of initiatives with dates, attach Jira issues to each one by
+Keep one list of initiatives with dates, attach Jira issues to each one by
 issue key, and see them as lanes on one timeline with a % done figure read from
 Jira.
 
