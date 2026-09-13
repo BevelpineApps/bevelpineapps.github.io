@@ -10,8 +10,7 @@ The app has two parts.
 
 - **The settings page, where colours are set.** Click **Settings** (the gear)
   in Jira's top bar and choose **Marketplace apps**. In the left-hand menu, under
-  **Apps**, choose **Coloured Labels**. Only Jira administrators can save or
-  remove a colour.
+  **Apps**, choose **Coloured Labels**.
 - **The issue panel, where colours are shown.** Open an issue, click the **View
   app actions** button under the issue title, and choose **Coloured Labels**. The
   panel is added to that issue and is still there when the issue is reloaded.
@@ -69,28 +68,14 @@ not touched.
 - If the colours cannot be loaded, the panel says so, and says that the chips are
   showing the default colour because the colours did not arrive.
 
-## Who can do what
-
-- **Saving or removing a colour needs a Jira administrator.** The app asks Jira,
-  on its server and as the person making the change, whether they hold
-  **Administer Jira**. It refuses the change before anything is written if they
-  do not, or if Jira cannot be asked.
-- **Any Jira administrator can change or remove any colour**, including one set
-  by somebody else.
-- **The list of coloured labels can be read by any user the panel is shown to**,
-  because the panel needs it to draw. For each label it holds the label name,
-  the colour and when it was set.
-
 ## Permissions
 
 The app asks for two Atlassian permissions:
 
-- **read:jira-work**: read an issue's labels, and ask Jira whether the person
-  changing a colour is a Jira administrator;
+- **read:jira-work**: read an issue's labels;
 - **storage:app**: store the label-to-colour mappings.
 
-Both Jira reads are made as the person using the app. The app has no write
-permission for Jira and never changes an issue.
+The app has no write permission for Jira and never changes an issue.
 
 ## Limits and known issues
 
@@ -103,19 +88,19 @@ permission for Jira and never changes an issue.
   labels.
 - **One set of colours per Jira site.** There are no per-project or per-user
   colours, and no import or export.
-- **Two administrators colouring the same label at the same time: the last save
-  wins**, and the first is not told. Colours for different labels do not affect
+- **Two saves of a colour for the same label at the same time: the last save
+  wins**, and the page that saved first is not told. Colours for different labels do not affect
   each other.
 - **Only the colours offered can be used.** There is no free colour picker and
   no hex values.
-- **The settings page draws at most 200 mappings**, and counts up to 2,000. If
-  there are more, the page says the list is not complete.
+- **The settings page draws at most 200 mappings.** If there are more, the page
+  says the list is not complete.
 - **Long unbroken text contains invisible characters.** So that a very long
   label cannot push the page sideways, the app inserts an invisible zero-width
   space (U+200B) every 24 characters into unbroken runs longer than that. This
   happens in the settings table's Label column, in its messages and
   confirmation, and in the panel's full-name lines. A label copied from this app
-  and pasted into Jira may therefore not match. Type the label, or copy it from
+  and pasted into Jira therefore does not match. Type the label, or copy it from
   Jira itself.
 - **Very wide characters can be clipped inside a chip.** The chip is shortened
   to an estimated width, and characters from some scripts are wider than that
@@ -133,9 +118,8 @@ The app runs entirely on Atlassian Forge.
   - the colour;
   - when it was set;
   - the Atlassian **account ID** of the administrator who set it.
-- **What is not stored.** The account ID is never sent to any page. The app
-  does not store issues or their labels; it reads an issue's labels from Jira
-  when the panel loads.
+- The account ID is never sent to any page. The app reads an issue's labels
+  from Jira when the panel loads.
 - **Removing a colour** deletes its record.
 - **Egress.** The app makes no outbound network calls.
 

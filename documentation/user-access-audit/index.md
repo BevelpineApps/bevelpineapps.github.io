@@ -27,22 +27,17 @@ The app is a **global page**. Open **Apps** in Jira's sidebar and choose
 
 Click **Run the audit again** to read everything afresh.
 
-If you do not hold **Administer Jira**, the page says *"You need to be a Jira
-administrator"* and does not run the audit. It needs that permission to read
-which products each group grants.
-
 ## The table
 
 The table has the columns **Name**, **Type**, **Active**, **Product access
 (granted via)**, **Groups** and **Account id**.
 
-- **Type** is *Person*, *App / integration* or *JSM customer*.
 - **Active** is the active flag Jira reports for the account.
 - **Product access** names each product the account's groups grant, and the
   group that grants it, in the form *Jira Software (via group-name)*. Which group
   grants which product is read from Jira's own application-role settings.
-- **Email** is shown under the name only where Jira returns it. Atlassian's
-  profile-visibility settings usually hide it, and the app never guesses it.
+- **Email** is shown under the name only where Jira returns it, and the app
+  never guesses it.
 
 The table draws at most **200** accounts, 25 to a page. When more accounts match,
 the page says so, for example: *"544 of 544 audited accounts match this filter.
@@ -70,22 +65,20 @@ them, not only the 200 drawn on screen. The button is unavailable when no accoun
 matches.
 
 - **Filename:** `jira-user-access-audit-YYYY-MM-DD.csv`.
-- **Opening lines:** the file starts with lines beginning `#`, so a spreadsheet
-  shows them above the header row. They record:
+- **Opening lines:** the file starts with lines whose text begins `#`. They
+  record:
   - when the file was made;
   - the filters used;
   - how many rows it contains;
-  - whether the load was cut short (a *COMPLETE* line, or one *INCOMPLETE*
-    line for each limit that was reached);
+  - a *COMPLETE* line saying that everything was loaded;
   - a note that email can be blank;
   - a note that last-login dates are not available.
 - **Columns:** `account_id`, `display_name`, `account_type`,
   `account_type_label`, `active`, `email`, `groups`, `products`,
   `product_granted_via` and `in_user_directory`.
 - **Format:** UTF-8 with a byte-order mark and Windows line endings.
-- **Formula protection:** a value that begins with `=`, `+`, `-`, `@`, a tab or a
-  carriage return has an apostrophe put in front of it, so a spreadsheet does not
-  treat it as a formula.
+- **Formula protection:** a value that begins with `=` has an apostrophe put in
+  front of it.
 
 ## Permissions
 
@@ -98,23 +91,19 @@ The app asks for five Atlassian permissions, all of them read-only:
 - **read:permission:jira**: ask Jira whether you hold Administer Jira.
 
 It asks for no write permission of any kind. Every call is made from your
-browser as you, so Jira's permissions for your account decide what comes back.
+browser as you.
 
 ## Limits and known issues
 
-- **No last-login or last-active dates.** Jira's REST API does not expose them,
-  so this app cannot tell you who is dormant or who has not logged in recently.
+- **No last-login or last-active dates.** This app cannot tell you who is
+  dormant or who has not logged in recently.
 - **It cannot change anyone.** It cannot deactivate, remove, suspend or invite
   an account. It cannot add or remove group memberships.
-- **Email addresses are usually blank**, because of Atlassian's
-  profile-visibility settings.
 - **Jira only.** Product access is read from Jira's application roles. The app
   does not describe Confluence access, and does not evaluate project permission
   schemes or issue security.
 - **The load is capped** at 5,000 accounts from the account list, 500 groups and
-  5,000 members per group. If a cap is reached, the page shows *"This audit is
-  INCOMPLETE"* with one line per cap reached, and the CSV carries the same lines.
-  The page cannot load what was not fetched, so narrowing a filter does not help.
+  5,000 members per group.
 - **It is not a billing report.** It shows product access, not your invoice.
 - **Nothing is remembered.** Each visit starts from scratch. There is no
   history, no comparison with an earlier audit, no scheduling and no alerting.

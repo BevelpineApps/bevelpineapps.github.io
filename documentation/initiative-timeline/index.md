@@ -1,6 +1,6 @@
 # Initiative Timeline for Jira
 
-Keep one shared list of initiatives with start and end dates, attach the Jira
+Keep one list of initiatives with start and end dates, attach the Jira
 issues that belong to each one by issue key, and see the initiatives as lanes on
 a single timeline, each with a % done figure read from Jira.
 
@@ -70,8 +70,7 @@ status category. It is a count of issues, not of story points or hours.
 **Keys that Jira did not return** are named on the card and left out of the
 percentage, rather than counted as not done:
 *"1 of 3: KAN-58. They may have been deleted, moved, or be invisible to you."*
-A key that does not exist, or an issue you do not have permission to see, is
-reported this way.
+A key that does not exist is reported this way.
 
 **The issue status line** under the timeline says how many of the linked keys
 Jira returned, for example *"Issue status: 15 of 16 distinct linked key(s)
@@ -89,22 +88,15 @@ columns **Issue**, **Summary**, **Status** and **Done?**.
   and says *"Initiative deleted."* No Jira issue is touched. A deleted
   initiative cannot be recovered.
 
-**Who can do what.** Initiatives are shared. Everyone who opens the page sees the
-same initiatives and can edit any of them. Only the person who created an
-initiative, or a Jira administrator, can delete it. Anyone else who tries is told
-that nothing was deleted and why.
-
 ## Permissions
 
 The app asks for two Atlassian permissions:
 
 - **read:jira-work**, to read the status and summary of the issue keys you
-  attach, and to ask Jira whether you are a Jira administrator when you delete
-  someone else's initiative;
+  attach;
 - **storage:app**, to store your initiatives.
 
-Every Jira read is made as you, through your own Jira permissions. The app never
-creates, edits, transitions or deletes anything in Jira.
+The app never creates, edits, transitions or deletes anything in Jira.
 
 ## Limits and known issues
 
@@ -128,9 +120,7 @@ creates, edits, transitions or deletes anything in Jira.
   saved name with **Edit**.
 - **The page shows at most 200 initiatives.** If there are more, the page says
   how many it showed and how many exist, for example *"Showing the first 200 of
-  208 initiatives. 8 more were not loaded."* It counts up to 5,000 initiatives.
-  Beyond that it says "at least" rather than giving a total it did not finish
-  counting.
+  208 initiatives. 8 more were not loaded."*
 - **One initiative links at most 100 issue keys**, and a name is at most 120
   characters. Longer input is refused, not trimmed.
 - **No automatic discovery.** The app does not find issues by epic, parent,
@@ -139,8 +129,8 @@ creates, edits, transitions or deletes anything in Jira.
   are typed), no automatic scheduling, no sprints and no capacity planning.
 - **One list per Jira site.** There are no per-project or per-person lists, and
   no way to restrict who can see or edit an initiative.
-- **Two people editing the same initiative at the same time: the last save
-  wins**, and the first person is not told. Saves to different initiatives do
+- **Two edits of the same initiative at the same time: the last save wins**,
+  and the page that saved first is not told. Saves to different initiatives do
   not affect each other.
 - **No history and no undo.**
 - **No export and no notifications.** Nothing runs unless someone has the page
@@ -149,7 +139,7 @@ creates, edits, transitions or deletes anything in Jira.
   word cannot push the page sideways, the app inserts an invisible zero-width
   space (U+200B) every 24 characters into unbroken runs longer than that, on the
   cards, in the issue table, in the key-box messages and in the delete
-  confirmation. Nothing is removed. But text copied off the page may carry those
+  confirmation. Nothing is removed. But text copied off the page carries those
   characters, so paste it into a plain-text editor before using it as an issue
   key or identifier. On the timeline itself a name with a very long unbroken run
   scrolls sideways inside its label instead.
@@ -165,9 +155,8 @@ The app runs entirely on Atlassian Forge.
   - when it was created and last updated;
   - the Atlassian **account IDs** of the people who created it and last updated
     it.
-- **What is not stored.** Account IDs are never sent to the page. Issue
-  summaries and statuses are read from Jira each time the page loads and are not
-  stored.
+- Account IDs are never sent to the page. Issue summaries and statuses are read
+  from Jira each time the page loads.
 - **Egress.** The app makes no outbound network calls.
 
 See the [privacy policy](/apps-privacy/#initiative-timeline-for-jira) for the
