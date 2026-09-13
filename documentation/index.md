@@ -19,6 +19,22 @@ which format to pick, and the app's limits.
 Insert the macro, put content inside it, and keep that content off PDF and Word
 exports. What is covered, what is not, and the app's limits.
 
+## [Initiative Timeline for Jira](/documentation/initiative-timeline/)
+
+Add initiatives with dates, attach Jira issues by key, and read the timeline and
+% done. What the form refuses, who can edit and delete, what is stored, and the
+app's limits and known issues.
+
+## [User Access Audit for Jira](/documentation/user-access-audit/)
+
+Run the audit, read the table, filter it and download the CSV. The permissions it
+uses, what it cannot do, and the app's limits.
+
+## [Coloured Labels for Jira](/documentation/coloured-labels/)
+
+Set a colour for a label, add the issue panel, and remove a colour again. Who can
+change colours, what is stored, and the app's limits.
+
 ---
 
 Can't find what you need? [Support](/support/) &middot;

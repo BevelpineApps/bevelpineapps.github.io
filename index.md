@@ -38,6 +38,34 @@ drops it.
 [Security](/security/) &middot;
 [Support](/support/)
 
+### Initiative Timeline for Jira
+
+Keep a shared list of initiatives with dates, attach Jira issues to each one by
+issue key, and see them as lanes on one timeline with a % done figure read from
+Jira.
+
+[Documentation](/documentation/initiative-timeline/) &middot;
+[Privacy policy](/apps-privacy/#initiative-timeline-for-jira) &middot;
+[Support](/support/)
+
+### User Access Audit for Jira
+
+List the accounts on your Jira site with their groups and the products those
+groups grant, filter the list, and download it as CSV. Read-only.
+
+[Documentation](/documentation/user-access-audit/) &middot;
+[Privacy policy](/apps-privacy/#user-access-audit-for-jira) &middot;
+[Support](/support/)
+
+### Coloured Labels for Jira
+
+Give a Jira label a colour once for the whole site, and see each issue's labels
+as coloured chips in the app's own issue panel.
+
+[Documentation](/documentation/coloured-labels/) &middot;
+[Privacy policy](/apps-privacy/#coloured-labels-for-jira) &middot;
+[Support](/support/)
+
 ## How we build
 
 - **Everything runs on Atlassian Forge**, inside your own tenancy.
