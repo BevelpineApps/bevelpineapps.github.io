@@ -19,8 +19,8 @@ confirmed and who has not.
 
 ### Bulk Excel &amp; CSV Exporter for Jira
 
-Export any Jira project or saved filter past Jira's built-in 1,000-row limit, to
-a real Excel (.xlsx) or CSV file. Verified against a project of 5,062 issues.
+Export any Jira project or saved filter to a real Excel (.xlsx) or CSV file, up to
+50,000 issues per export.
 
 [Documentation](/documentation/bulk-excel-csv-exporter/) &middot;
 [Privacy policy](/apps-privacy/) &middot;

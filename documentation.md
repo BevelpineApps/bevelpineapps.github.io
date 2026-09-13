@@ -10,7 +10,7 @@ is stored, and the app's limits.
 
 ## [Bulk Excel &amp; CSV Exporter for Jira](/documentation/bulk-excel-csv-exporter/)
 
-Export a Jira project or saved filter to Excel or CSV past the 1,000-row limit.
+Export a Jira project or saved filter to Excel or CSV, up to 50,000 issues per export.
 Where to find the app, choosing a source and a format, what the columns mean,
 which format to pick, and the app's limits.
 

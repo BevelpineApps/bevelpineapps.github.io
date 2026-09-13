@@ -1,7 +1,7 @@
 # Bulk Excel &amp; CSV Exporter for Jira
 
-Export a Jira project or a saved filter to a real Excel (.xlsx) or CSV file, past
-Jira's built-in 1,000-row export limit.
+Export a Jira project or a saved filter to a real Excel (.xlsx) or CSV file, up to
+50,000 issues per export.
 
 ## Where to find it after installing
 
@@ -65,9 +65,8 @@ items. It cannot show anyone an issue they could not open in Jira.
   **Saved filter** source instead &mdash; that is the reliable workaround today.
 - **The saved-filter list stops at 100 filters**, in the same way.
 - **An export stops at 50,000 issues.** If a project or filter has more than
-  that, the file contains the first 50,000 and the success message reports the
-  number written without warning you that the result was cut short. Check the
-  reported count against the issue count in Jira on very large exports.
+  that, the file contains the first 50,000, and the app says the export was cut
+  short &mdash; on screen, in the file, and in the file name.
 - **A search that matches nothing reports success.** If a saved filter refers to
   a field or value that no longer exists, Jira returns an empty result rather
   than an error, and the app reports *"Exported 0 issues"* as a success. **If you
@@ -80,11 +79,6 @@ items. It cannot show anyone an issue they could not open in Jira.
   query, save it as a filter in Jira first.
 - **No scheduling, no email delivery, no templates.** This app runs one export
   when you click the button.
-- **The form's three drop-downs have no visible labels** in the released version.
-  Top to bottom they are: **source**, then **project or saved filter**, then
-  **file format**. The first list showing the word "Project" is the *source*
-  selector, not the project picker; the project picker is the one below it
-  reading "Choose a project".
 
 ## Your data
 
