@@ -3,7 +3,7 @@
 Support covers the six Bevelpine apps documented on this site: **Read Receipts
 for Confluence**, **Bulk Excel &amp; CSV Exporter for Jira**, **Hide from Export
 for Confluence**, **Initiative Timeline for Jira**, **User Access Audit for
-Jira** and **Coloured Labels for Jira**.
+Jira** and **Label Colors for Jira**.
 
 ## Get help
 
@@ -43,7 +43,7 @@ we keep current:
 - [Hide from Export for Confluence](/documentation/hide-from-export/#what-it-does-not-do)
 - [Initiative Timeline for Jira](/documentation/initiative-timeline/#limits-and-known-issues)
 - [User Access Audit for Jira](/documentation/user-access-audit/#limits-and-known-issues)
-- [Coloured Labels for Jira](/documentation/coloured-labels/#limits-and-known-issues)
+- [Label Colors for Jira](/documentation/coloured-labels/#limits-and-known-issues)
 
 That is where a known fault is listed and where a fix is announced. **We do not
 currently run a public issue tracker.** If that changes this page will say so;

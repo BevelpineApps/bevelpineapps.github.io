@@ -14,7 +14,7 @@ entirely on Atlassian Forge.
 | Third-party services | none | none | none |
 | Data leaves Atlassian | **no** | **no** | **no** |
 
-| | Initiative Timeline | User Access Audit | Coloured Labels |
+| | Initiative Timeline | User Access Audit | Label Colors |
 |---|---|---|---|
 | Atlassian permissions requested | read Jira work + app storage | five read-only Jira permissions | read Jira work + app storage |
 | Stores data | initiative records, including account IDs | **nothing** | label colours, including an account ID |
@@ -61,7 +61,7 @@ and the email address where Jira returns it. If the user downloads the CSV, it
 is made in their browser and saved to their own computer, and it contains the
 same account details. Handle it as personal data.
 
-**Coloured Labels for Jira.** The app stores one record per coloured label: the
+**Label Colors for Jira** (shown in Jira as Coloured Labels). The app stores one record per coloured label: the
 label name, the colour, when it was set, and the Atlassian **account ID** of the
 administrator who set it. The account ID is recorded by the app's server-side
 code and is never sent to any page. The app reads an issue's labels from Jira
@@ -71,7 +71,7 @@ in the app; removing it deletes its record.
 ## Where data is stored
 
 Read Receipts uses Atlassian's own Forge hosted storage, inside your tenancy.
-Initiative Timeline and Coloured Labels use Forge hosted storage for the app's
+Initiative Timeline and Label Colors use Forge hosted storage for the app's
 installation on your site. Nothing is stored by Bevelpine Apps anywhere else,
 for any app.
 
@@ -120,4 +120,4 @@ programme.** We would rather say so plainly than leave it to be inferred.
 - [Bulk Excel &amp; CSV Exporter for Jira, and Hide from Export for Confluence](/apps-privacy/)
 - [Initiative Timeline for Jira](/apps-privacy/#initiative-timeline-for-jira)
 - [User Access Audit for Jira](/apps-privacy/#user-access-audit-for-jira)
-- [Coloured Labels for Jira](/apps-privacy/#coloured-labels-for-jira)
+- [Label Colors for Jira](/apps-privacy/#label-colors-for-jira)

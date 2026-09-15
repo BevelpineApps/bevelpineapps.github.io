@@ -58,13 +58,13 @@ groups grant, filter the list, and download it as CSV. Read-only.
 [Security](/security/) &middot;
 [Support](/support/)
 
-### Coloured Labels for Jira
+### Label Colors for Jira
 
 Give a Jira label a colour once for the whole site, and see each issue's labels
 as coloured chips in the app's own issue panel.
 
 [Documentation](/documentation/coloured-labels/) &middot;
-[Privacy policy](/apps-privacy/#coloured-labels-for-jira) &middot;
+[Privacy policy](/apps-privacy/#label-colors-for-jira) &middot;
 [Security](/security/) &middot;
 [Support](/support/)
 
@@ -77,7 +77,7 @@ as coloured chips in the app's own issue panel.
   browser and saved to that user's own computer.
 - **The permissions each app asks for.** Read Receipts asks only for access to
   its own storage. The Exporter asks only to read Jira work. Hide from Export
-  asks for nothing at all. Initiative Timeline and Coloured Labels ask to read
+  asks for nothing at all. Initiative Timeline and Label Colors ask to read
   Jira work and for their own storage. User Access Audit asks for five
   read-only Jira permissions.
 - **We publish what each app does not do**, on every documentation page.
