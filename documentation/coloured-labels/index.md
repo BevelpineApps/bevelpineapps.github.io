@@ -1,42 +1,40 @@
 # Label Colors for Jira
 
-_Inside Jira, the app's settings page and issue panel are titled **Coloured Labels**, so the steps below use that name._
-
-Give a Jira label a colour once for the whole site, then see each issue's labels
-as coloured chips in the app's own issue panel. The app never changes the labels
+Give a Jira label a color once for the whole site, then see each issue's labels
+as colored chips in the app's own issue panel. The app never changes the labels
 on an issue.
 
 ## Where to find it after installing
 
 The app has two parts.
 
-- **The settings page, where colours are set.** Click **Settings** (the gear)
+- **The settings page, where colors are set.** Click **Settings** (the gear)
   in Jira's top bar and choose **Marketplace apps**. In the left-hand menu, under
-  **Apps**, choose **Coloured Labels**.
-- **The issue panel, where colours are shown.** Open an issue, click the **View
-  app actions** button under the issue title, and choose **Coloured Labels**. The
+  **Apps**, choose **Label Colors**.
+- **The issue panel, where colors are shown.** Open an issue, click the **View
+  app actions** button under the issue title, and choose **Label Colors**. The
   panel is added to that issue and is still there when the issue is reloaded.
   Other issues need the panel added the same way. To take it off an issue, open
   the panel's **More actions** menu and choose **Remove**.
 
-## Giving a label a colour
+## Giving a label a color
 
-On the settings page, under **Give a label a colour**:
+On the settings page, under **Give a label a color**:
 
 1. In **Label**, type the label exactly as it appears in Jira. Capitals matter.
    A label cannot contain spaces, and can be up to 255 characters.
-2. In **Colour**, choose one of the 21 colours offered, for example *Green —
-   accent-green*. *Default (grey)* is what an uncoloured label looks like. A
+2. In **Color**, choose one of the 21 colors offered, for example *Green —
+   accent-green*. *Default (gray)* is what an uncolored label looks like. A
    preview chip next to the buttons shows the result.
-3. Click **Save colour**.
+3. Click **Save color**.
 
-The page confirms the save, for example *"needs-review" is now coloured*. Saving
-the same label again with a different colour says *"… changed colour"*. The Label
+The page confirms the save, for example *"needs-review" is now colored*. Saving
+the same label again with a different color says *"… changed color"*. The Label
 field empties after a successful save.
 
 Nothing is saved, and the page says why, when:
 
-- the label is empty: *"Type the label you want to colour."*
+- the label is empty: *"Type the label you want to color."*
 - the label contains a space: *"A Jira label cannot contain spaces, so a mapping
   with a space in it could never match anything."*
 - the label is longer than 255 characters, for example: *"Jira refuses a label
@@ -44,56 +42,56 @@ Nothing is saved, and the page says why, when:
 
 After a refused save, your text stays in the field so you can correct it.
 
-**Colours set on this site** lists the mappings with the columns **Label**,
-**How it looks**, **Colour** and **Last changed (UTC)**, and a count such as
+**Colors set on this site** lists the mappings with the columns **Label**,
+**How it looks**, **Color** and **Last changed (UTC)**, and a count such as
 *"Showing all 1 mapping."*
 
-## Removing a colour
+## Removing a color
 
-Click **Remove colour** on a row and confirm. The page says, for example,
-*"needs-review" is back to the default colour*. Issues carrying that label then
-show it as *Default (grey)*, like any label with no colour. The label itself is
+Click **Remove color** on a row and confirm. The page says, for example,
+*"needs-review" is back to the default color*. Issues carrying that label then
+show it as *Default (gray)*, like any label with no color. The label itself is
 not touched.
 
 ## Reading the panel
 
-- Each label on the issue is shown as a chip. A label with a colour takes that
-  colour. A label without one is shown as *Default (grey)*.
+- Each label on the issue is shown as a chip. A label with a color takes that
+  color. A label without one is shown as *Default (gray)*.
 - An issue with no labels says *"No labels on this issue."*
 - **The panel shows at most 50 labels.** On an issue with more, it shows the
   first 50 and says so, for example *"Showing the first 50 of 51 labels. 1 more
   was not loaded."*
 - A label too long for its chip is shortened in the chip, and printed in full
   underneath.
-- The panel reads the colours when the issue loads. **An open panel does not
-  update when a colour is changed.** Reload the issue to see the change.
-- If the colours cannot be loaded, the panel says so, and says that the chips are
-  showing the default colour because the colours did not arrive.
+- The panel reads the colors when the issue loads. **An open panel does not
+  update when a color is changed.** Reload the issue to see the change.
+- If the color mapping cannot be loaded, the panel says so, and says that the
+  chips are showing the default color because the mapping did not arrive.
 
 ## Permissions
 
 The app asks for two Atlassian permissions:
 
 - **read:jira-work**: read an issue's labels;
-- **storage:app**: store the label-to-colour mappings.
+- **storage:app**: store the label-to-color mappings.
 
 The app has no write permission for Jira and never changes an issue.
 
 ## Limits and known issues
 
-- **Colours appear only inside this app's panel.** The app does not restyle
+- **Colors appear only inside this app's panel.** The app does not restyle
   Jira's own Labels field, boards, backlogs, search results, dashboards, emails
   or exports.
 - **The panel is added issue by issue.** It does not appear on issues by
   itself.
 - **Matching is exact, including capitals.** *High* and *high* are two different
   labels.
-- **One set of colours per Jira site.** There are no per-project or per-user
-  colours, and no import or export.
-- **Two saves of a colour for the same label at the same time: the last save
-  wins**, and the page that saved first is not told. Colours for different labels do not affect
+- **One set of colors per Jira site.** There are no per-project or per-user
+  colors, and no import or export.
+- **Two saves of a color for the same label at the same time: the last save
+  wins**, and the page that saved first is not told. Colors for different labels do not affect
   each other.
-- **Only the colours offered can be used.** There is no free colour picker and
+- **Only the colors offered can be used.** There is no free color picker and
   no hex values.
 - **The settings page draws at most 200 mappings.** If there are more, the page
   says the list is not complete.
@@ -115,14 +113,14 @@ The app has no write permission for Jira and never changes an issue.
 The app runs entirely on Atlassian Forge.
 
 - **What is stored.** The mappings are stored in Forge hosted storage for your
-  site's installation, one record per coloured label. Each record holds:
+  site's installation, one record per colored label. Each record holds:
   - the label name;
-  - the colour;
+  - the color;
   - when it was set;
   - the Atlassian **account ID** of the administrator who set it.
 - The account ID is never sent to any page. The app reads an issue's labels
   from Jira when the panel loads.
-- **Removing a colour** deletes its record.
+- **Removing a color** deletes its record.
 - **Egress.** The app makes no outbound network calls.
 
 See the [privacy policy](/apps-privacy/#label-colors-for-jira) for the full

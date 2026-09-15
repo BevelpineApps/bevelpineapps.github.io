@@ -17,7 +17,7 @@ entirely on Atlassian Forge.
 | | Initiative Timeline | User Access Audit | Label Colors |
 |---|---|---|---|
 | Atlassian permissions requested | read Jira work + app storage | five read-only Jira permissions | read Jira work + app storage |
-| Stores data | initiative records, including account IDs | **nothing** | label colours, including an account ID |
+| Stores data | initiative records, including account IDs | **nothing** | label colors, including an account ID |
 | Outbound network calls | **none** | **none** | **none** |
 | Analytics or tracking | none | none | none |
 | Third-party services | none | none | none |
@@ -61,11 +61,11 @@ and the email address where Jira returns it. If the user downloads the CSV, it
 is made in their browser and saved to their own computer, and it contains the
 same account details. Handle it as personal data.
 
-**Label Colors for Jira** (shown in Jira as Coloured Labels). The app stores one record per coloured label: the
-label name, the colour, when it was set, and the Atlassian **account ID** of the
+**Label Colors for Jira**. The app stores one record per colored label: the
+label name, the color, when it was set, and the Atlassian **account ID** of the
 administrator who set it. The account ID is recorded by the app's server-side
 code and is never sent to any page. The app reads an issue's labels from Jira
-when the issue panel loads. A colour is kept until an administrator removes it
+when the issue panel loads. A color is kept until an administrator removes it
 in the app; removing it deletes its record.
 
 ## Where data is stored

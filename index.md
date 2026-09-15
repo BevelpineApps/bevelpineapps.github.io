@@ -60,8 +60,8 @@ groups grant, filter the list, and download it as CSV. Read-only.
 
 ### Label Colors for Jira
 
-Give a Jira label a colour once for the whole site, and see each issue's labels
-as coloured chips in the app's own issue panel.
+Give a Jira label a color once for the whole site, and see each issue's labels
+as colored chips in the app's own issue panel.
 
 [Documentation](/documentation/coloured-labels/) &middot;
 [Privacy policy](/apps-privacy/#label-colors-for-jira) &middot;
